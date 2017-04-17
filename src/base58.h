@@ -278,7 +278,7 @@ public:
     enum
     {
         PUBKEY_ADDRESS = 38, // Address start with 'G'
-        SCRIPT_ADDRESS = 38,
+        SCRIPT_ADDRESS = 39,
         PUBKEY_ADDRESS_TEST = 122,
         SCRIPT_ADDRESS_TEST = 228,
     };

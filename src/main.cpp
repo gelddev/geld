@@ -2474,7 +2474,7 @@ bool LoadBlockIndex(bool fAllowNew)
        CTxIn(COutPoint(0000000000, 4294967295), coinbase 04ffff001d010437467269656e6473686970436f696e20506f5320636f696e20666f7220736f6369616c20776974686f7574204153494373206d696e696e67)
         */
         unsigned int nTimeGenesis= fTestNet ? 1492442513 : 1492442513;
-        unsigned int nNonceGenesis= fTestNet ? 382067 : 857641;
+        unsigned int nNonceGenesis= fTestNet ? 382067 : 1460096;
 
         const char* pszTimestamp = "Democrat Jon Ossoff gets slim chance to take Republican congressional seat in Georgia"; // By Seth McLaughlin - The Washington Times - Sunday, April 16, 2017
         CTransaction txNew;
@@ -2500,14 +2500,13 @@ bool LoadBlockIndex(bool fAllowNew)
 
         // debug print
         if(fTestNet){
-          assert(block.hashMerkleRoot == uint256("0x928ff5127764c432626c92b081cf75642e86d2a25267cab9c6ec4922b11d3070"));
+          assert(block.hashMerkleRoot == uint256("0x14e7a147697672afca6f39ee217314976d799522da78bc08d8aa458aafcf8096"));
         }
         else {
-          assert(block.hashMerkleRoot == uint256("0x3300f8d501c8940e56d66479773022fdad1986d35d62fc09d4b8079f8f8593af"));
+          assert(block.hashMerkleRoot == uint256("0x14e7a147697672afca6f39ee217314976d799522da78bc08d8aa458aafcf8096"));
         }
 
         /* for Genesis Block */
-        /*
         if (true && block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
@@ -2537,7 +2536,6 @@ bool LoadBlockIndex(bool fAllowNew)
            printf("block.nNonce = %u \n", block.nNonce);
            printf("block.GetHash = %s\n", block.GetHash().ToString().c_str());
         }
-        */
         /* for Genesis Block End */
 
 
