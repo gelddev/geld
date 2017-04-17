@@ -1,0 +1,9 @@
+Building Geld
+
+See doc/readme-qt.rst for instructions on building Geld QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Geld.
+
+See doc/build-*.txt for instructions on building geldd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Geld.
